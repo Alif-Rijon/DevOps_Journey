@@ -1,8 +1,8 @@
 # DevOps Linux mini project
 
-This is my week 1 Linux mini project for DevOps learning
+This is my Linux mini project for DevOps learning.
 
-## what I practiced
+## What I practiced
 - mkdir
 - touch
 - echo
@@ -10,12 +10,29 @@ This is my week 1 Linux mini project for DevOps learning
 - grep
 - find
 - chmod
-- bash script excution
+- bash script execution
 
-## Project structure
-- data/
-- logs/
-- scripts/
+## Project Structure
+```text
+devops-project/
+├── README.md
+├── data/
+│   ├── servers.txt
+│   └── users.txt
+├── logs/
+│   ├── app.log
+│   ├── system.log
+│   ├── servers_backup.txt
+│   └── users_backup.txt
+└── scripts/
+    └── backup.sh
+```
 
-## Scripts
-backup.sh copies data files into logs backup files
+## Script
+`backup.sh` copies data files into backup files inside the `logs/` folder.
+
+## How to Run
+```bash
+chmod +x scripts/backup.sh
+./scripts/backup.sh
+```
