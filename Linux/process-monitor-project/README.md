@@ -27,15 +27,16 @@ This project is part of my DevOps learning journey
 ```
 
 ## Project Structure:
-
-process-monitor-project
-    ├── logs
+```text
+process-monitor-project/
+    ├── logs/
     │   └── process.log
     ├── README.md
-    ├── scripts
+    ├── scripts/
     │   └── monitor.sh
-    └── temp
+    └── temp/
         └── current_process.txt
+```
 
 ## What this project does:
 - starts a background process
