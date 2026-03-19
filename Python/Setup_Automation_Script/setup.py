@@ -2,7 +2,7 @@
 
 import os
 
-import os
+import subprocess
 
 folders_name=["data","logs","scripts"]
 
@@ -30,4 +30,11 @@ for i in folders_name:
 
                     
 print("Setup complete.\nCurrent directory lists: \n",os.listdir())
-
+print("\nCurrent directory lists from linux command shell:\n")
+subprocess.run(["ls","-l"])
+print("\nWorking directory from  linux command:\n")
+subprocess.run(["pwd"])
+print("\nCurrent working directory\n")
+subprocess.run(["whoami"])
+print("\nCurrent date from linux command:\n")
+subprocess.run(["date"])
