@@ -28,6 +28,7 @@ Setup_Automation_Script/
 
 - Python 3
 - `os` module (built-in)
+- `subprocess` module
 
 ## How to Run
 
@@ -63,6 +64,26 @@ File created.
 Setup complete.
 Current directory contents:
 ['data', 'logs', 'scripts', 'setup.py']
+Current directory lists from linux command shell:
+
+total 16
+drwxrwxr-x 5 user user 4096 Mar 19 15:55 Setup_Automation_Script
+drwxrwxr-x 2 user user 4096 Mar 19 15:55 data
+drwxrwxr-x 3 user user 4096 Mar 19 15:55 logs
+drwxrwxr-x 2 user user 4096 Mar 19 15:55 scripts
+
+Working directory from  linux command:
+
+/home/user/devOps_Journey/Python
+
+Current working directory
+
+user
+
+Current date from linux command:
+
+Thu Mar 19 15:55:50 +06 2026
+
 ```
 
 ### Second Run
@@ -76,6 +97,26 @@ File already exists.
 Setup complete.
 Current directory contents:
 ['data', 'logs', 'scripts', 'setup.py']
+Current directory lists from linux command shell:
+
+total 16
+drwxrwxr-x 5 user user 4096 Mar 19 15:55 Setup_Automation_Script
+drwxrwxr-x 2 user user 4096 Mar 19 15:55 data
+drwxrwxr-x 3 user user 4096 Mar 19 15:55 logs
+drwxrwxr-x 2 user user 4096 Mar 19 15:55 scripts
+
+Working directory from  linux command:
+
+/home/user/devOps_Journey/Python
+
+Current working directory
+
+user
+
+Current date from linux command:
+
+Thu Mar 19 15:55:50 +06 2026
+
 ```
 ## Concepts Practiced
 
@@ -86,6 +127,10 @@ Current directory contents:
 - `os.path.exists()`
 - `os.mkdir()`
 - `os.listdir()`
+- `subprocess.run(["ls","l"])`
+- `subprocess.run(["pwd"])`
+- `subprocess.run(["whoami"])`
+- `subprocess.run(["date"])`
 - file creation
 - idempotent scripting
 
